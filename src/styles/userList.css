@@ -15,6 +15,7 @@
 .search-sort {
   margin-bottom: 10px;
   display: flex;
+  width: max-content;
 }
 
 .search-input {
@@ -37,7 +38,7 @@
   color: white;
   border: none;
   cursor: pointer;
-  margin-left: 10px;
+  margin: 0 0 10px 10px;
   border-radius: 5px;
 }
 
