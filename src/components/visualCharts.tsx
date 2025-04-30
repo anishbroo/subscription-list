@@ -15,13 +15,15 @@ const VisualCharts: React.FC<VisualChartsProps> = ({
   const totalUsers = users.length;
   const activeUsers = users.filter((u) => u.active === "1").length;
   const inactiveUsers = totalUsers - activeUsers;
+  const subscriptionUsers = subscriptions.length;
 
   const userActivityData = [
     { name: "Active", value: activeUsers },
     { name: "Inactive", value: inactiveUsers },
+    { name: "Subscription", value: subscriptionUsers },
   ];
 
-  const colors = ["green", "orange"];
+  const colors = ["green", "red", "orange"];
 
   return (
     <>
@@ -38,12 +40,12 @@ const VisualCharts: React.FC<VisualChartsProps> = ({
 
         <div className="card">
           <h3>Subscription Users</h3>
-          <p>{subscriptions.length}</p>
+          <p>{subscriptionUsers}</p>
         </div>
       </div>
 
       <div className="chart-container">
-        <h3>User Activity</h3>
+        <h3 className="chart-heading">User Activity</h3>
         <ResponsiveContainer width="100%" height={300}>
           <PieChart>
             <Pie data={userActivityData} dataKey="value" label>

@@ -1,15 +1,18 @@
 .user-details {
-  width: 50%;
+  width: 60%;
   padding: 20px;
   box-sizing: border-box;
   margin-bottom: 10px;
 }
 
-.user-details h2 {
+.user-heading {
   font-size: 2rem;
+  color: #388e3c;
+  border-bottom: 1px solid #a5d6a7;
 }
 
-.user-details p {
+.user-paragraph {
   text-align: left;
   font-size: 18px;
+  color: #333333;
 }

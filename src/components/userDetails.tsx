@@ -11,24 +11,40 @@ const UserDetails: React.FC<UserDetailsProps> = ({ user, subscription }) => {
   return (
     <>
       <div className="user-details">
-        <h2>
+        <h2 className="user-heading">
           {user.first_name} {user.last_name}
         </h2>
-        <p>Username: {user.username}</p>
-        <p>Email: {user.email}</p>
-        <p>Active: {user.active === "0" ? "Inactive" : "Active"}</p>
-        <p>Address: {user.address}</p>
-        <p>Country: {user.country}</p>
-        <p>Join Date: {user.join_date}</p>
+        <p className="user-paragraph ">
+          <b>Username:</b> {user.username}
+        </p>
+        <p className="user-paragraph ">
+          <b>Email:</b> {user.email}
+        </p>
+        <p className="user-paragraph ">
+          <b>Active:</b> {user.active === "0" ? "Inactive" : "Active"}
+        </p>
+        <p className="user-paragraph ">
+          <b>Address:</b> {user.address}
+        </p>
+        <p className="user-paragraph ">
+          <b>Country:</b> {user.country}
+        </p>
+        <p className="user-paragraph ">
+          <b>Join Date:</b> {user.join_date}
+        </p>
 
         {subscription ? (
           <>
-            <p>Package: {subscription.package}</p>
-            <p>Expires On: {subscription.expires_on}</p>
+            <p className="user-paragraph ">
+              <b>Package:</b> {subscription.package}
+            </p>
+            <p className="user-paragraph ">
+              <b>Expires on:</b> {subscription.expires_on}
+            </p>
           </>
         ) : (
           <>
-            <p>No subscription found</p>
+            <p className="user-paragraph ">No subscription found</p>
           </>
         )}
       </div>

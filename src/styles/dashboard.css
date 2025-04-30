@@ -1,101 +1,13 @@
 body {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; /* More modern font */
-  margin: 0;
-  background: linear-gradient(
-    to right bottom,
-    #f0f2f5,
-    #e1e6ed
-  ); /* Subtle gradient background */
-  color: #333; /* Darker, more readable text */
-  line-height: 1.6; /* Improved text readability */
+  background-color: #f0f4c3;
+  max-width: 1280px;
+  margin: 0 auto;
+  text-align: center;
+  font-family: sans-serif;
 }
 
-.dashboard {
-  padding: 30px; /* Increased padding for more breathing room */
-  max-width: 1200px; /* Limit width for better readability on large screens */
-  margin: 20px auto; /* Center the dashboard with some top/bottom margin */
-}
-
-.user-list {
-  margin-top: 30px; /* Increased top margin */
-  background: rgba(
-    255,
-    255,
-    255,
-    0.8
-  ); /* Slightly transparent white background */
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05); /* Subtle box shadow */
-}
-
-.user-list h2 {
-  color: #337ab7; /* Accent color for the heading */
-  margin-top: 0;
-  margin-bottom: 15px;
-  border-bottom: 2px solid #337ab7; /* Underline for the heading */
-  padding-bottom: 5px;
-}
-
-.user-list input {
-  padding: 12px;
-  width: calc(100% - 24px); /* Adjust width for padding */
-  margin-bottom: 15px;
-  border: 1px solid #ccc;
-  border-radius: 6px;
-  box-sizing: border-box; /* Ensure padding doesn't affect width */
-  font-size: 1rem;
-}
-
-.user-list input:focus {
-  outline: none;
-  border-color: #337ab7; /* Highlight on focus */
-  box-shadow: 0 0 5px rgba(51, 122, 183, 0.5); /* Subtle focus shadow */
-}
-
-.user-list ul {
-  list-style: none;
-  padding: 0;
-}
-
-.user-list li {
-  background: #fff;
-  margin-bottom: 10px;
-  padding: 15px;
-  cursor: pointer;
-  border-radius: 6px;
-  transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Smoother transitions */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.03); /* Subtle shadow for list items */
-}
-
-.user-list li:hover {
-  background: #f9f9f9; /* Lighter hover background */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05); /* Slightly stronger shadow on hover */
-}
-
-.user-details {
-  background: #fff;
-  padding: 30px; /* Increased padding */
-  margin-top: 30px; /* Increased top margin */
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05); /* Subtle box shadow */
-  margin-bottom: 30px; /* Increased bottom margin */
-}
-
-.user-details h2 {
-  color: #5cb85c; /* Another accent color */
-  margin-top: 0;
-  margin-bottom: 15px;
-  border-bottom: 2px solid #5cb85c; /* Underline */
-  padding-bottom: 5px;
-}
-
-.user-details p {
-  margin-bottom: 10px;
-  color: #555; /* Slightly lighter text for details */
-}
-
-.user-details strong {
-  font-weight: bold;
-  color: #333; /* Emphasize labels */
+.subscription-heading {
+  font-size: 42px;
+  font-family: sans-serif;
+  color: #333333;
 }
