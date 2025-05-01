@@ -91,3 +91,10 @@
   margin: 10px 0 0 10px;
   border-radius: 5px;
 }
+
+.before-viewing-details {
+  color: #333333;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+}

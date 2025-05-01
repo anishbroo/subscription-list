@@ -69,13 +69,17 @@ const UserList: React.FC<UserListProps> = ({ users, subscriptions }) => {
       </div>
 
       <div className="user-details-section">
-        {selectedUserId && (
+        {selectedUserId && selectedUserId > 0 ? (
           <UserDetails
             user={users.find((u) => u.id === selectedUserId)!}
             subscription={subscriptions.find(
               (s) => Number(s.user_id) === selectedUserId
             )}
           />
+        ) : (
+          <p className="before-viewing-details">
+            To view the user details, Please click user.
+          </p>
         )}
       </div>
     </div>
